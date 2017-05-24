@@ -1,0 +1,43 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "w01kP96jx5UAf+uWB8m0w8Xghas=",
+			"path": "github.com/golang/freetype",
+			"revision": "bcfeb16b74e8aea9e2fe043406f2ef74b1cb0759",
+			"revisionTime": "2017-04-29T00:42:25Z"
+		},
+		{
+			"checksumSHA1": "aJ/kX/eCUlrCJBZ26Hwh/RXzAIw=",
+			"path": "github.com/golang/freetype/raster",
+			"revision": "bcfeb16b74e8aea9e2fe043406f2ef74b1cb0759",
+			"revisionTime": "2017-04-29T00:42:25Z"
+		},
+		{
+			"checksumSHA1": "I3u9Uh9thka1gsgch6QEiPkaAr0=",
+			"path": "github.com/golang/freetype/truetype",
+			"revision": "bcfeb16b74e8aea9e2fe043406f2ef74b1cb0759",
+			"revisionTime": "2017-04-29T00:42:25Z"
+		},
+		{
+			"checksumSHA1": "+U1IB5N4LDS74y4fXjARb4/S4IE=",
+			"path": "golang.org/x/image/font",
+			"revision": "f483456c9f61fd7c1e170033d58ef22ff5ffe291",
+			"revisionTime": "2017-04-30T07:13:35Z"
+		},
+		{
+			"checksumSHA1": "euzvwlMLxyD0hwc+raoVsDLv6j4=",
+			"path": "golang.org/x/image/math/fixed",
+			"revision": "f483456c9f61fd7c1e170033d58ef22ff5ffe291",
+			"revisionTime": "2017-04-30T07:13:35Z"
+		},
+		{
+			"checksumSHA1": "fjMK2G5arnjllpoeBYeyf9Y2Iok=",
+			"path": "golang.org/x/net/proxy",
+			"revision": "feeb485667d1fdabe727840fe00adc22431bc86e",
+			"revisionTime": "2017-05-02T17:39:58Z"
+		}
+	],
+	"rootPath": "github.com/aerth/spotbitcoin"
+}
