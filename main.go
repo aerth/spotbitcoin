@@ -7,7 +7,7 @@ import (
 
 func main() {
 	flag.Parse()
-	addr := "127.0.0.1:8080"
+	addr := "0.0.0.0:80"
 	gethttpclient()
 	s := new(System)
 	h := http.DefaultServeMux
