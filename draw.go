@@ -20,7 +20,7 @@ func drawpng(s string) (image.Image, error) {
 	draw.Draw(dest, dest.Bounds(), &image.Uniform{color.Black}, image.ZP, draw.Src)
 
 	// grab font
-	fontBytes, err := ioutil.ReadFile("TerminusTTF-4.40.1.ttf")
+	fontBytes, err := ioutil.ReadFile("../TerminusTTF-4.40.1.ttf")
 	if err != nil {
 		return nil, err
 	}
