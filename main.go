@@ -17,6 +17,7 @@ func main() {
 	h := http.DefaultServeMux
 	h.Handle("/current.png", s)
 	h.Handle("/", http.HandlerFunc(home))
+	println("listening", addr)
 	err := http.ListenAndServe(addr, h)
 	if err != nil {
 
