@@ -11,7 +11,11 @@ func main() {
 	gethttpclient()
 	s := new(System)
 	h := http.DefaultServeMux
-	h.Handle("/", s)
+	h.Handle("/current.png", s)
+	h.Handle("/", http.HandlerFunc(home))
 	http.ListenAndServe(addr, h)
+}
 
+func home(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("/current.png"))
 }
