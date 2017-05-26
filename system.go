@@ -29,8 +29,9 @@ func (s *System) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	res := s.cache
+	s.mu.Lock() // one at a time (still quick)
 	if time.Now().Sub(s.last) > CacheTime {
-		s.mu.Lock()
+		fmt.Println("\nGrabbing from API\n")
 		res = Get()
 		if res.Error != "" {
 			println(time.Now().String(), res.Error)
@@ -38,11 +39,11 @@ func (s *System) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 		s.last = time.Now()
 		s.cache = res
-		s.mu.Unlock()
 
 	} else {
 		fmt.Println("Using Cached response from:", s.last)
 	}
+	s.mu.Unlock()
 
 	fmt.Println(res)
 	img, err := drawpng(fmt.Sprintf("%s: 1 Bitcoin (BTC) is currently worth USD %s", res.GetTime(), "$"+strings.Split(res.BPI["USD"].Rate, ".")[0]))
