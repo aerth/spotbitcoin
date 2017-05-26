@@ -1,2 +1,2 @@
 PORT?=80
-web: spotbitcoin
+web: spotbitcoin -p $PORT

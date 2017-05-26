@@ -14,9 +14,12 @@ import (
 var endpoint = []byte("http://api.coindesk.com/v1/bpi/currentprice.json")
 var httpclient *http.Client
 var proxypath string
+var flagport string
 
 func init() {
+	flag.StringVar(&flagport, "p", "", "port to listen on all interfaces")
 	flag.StringVar(&proxypath, "socks", "", "socks proxy to use (format: socks5://localhost:1080)")
+
 }
 
 // sample JSON response from API:
