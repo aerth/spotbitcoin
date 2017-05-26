@@ -22,7 +22,7 @@ func main() {
 		addr = "0.0.0.0:" + flagport
 	}
 	gethttpclient()
-	s := new(System)
+	s := NewSystem()
 	h := http.DefaultServeMux
 	h.Handle("/", http.HandlerFunc(home))
 	h.Handle("/current.png", s)
