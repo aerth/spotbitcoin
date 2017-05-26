@@ -14,7 +14,7 @@ import (
 
 func drawpng(s string) (image.Image, error) {
 
-	dest := image.NewRGBA(image.Rect(0, 0, 550, 22))
+	dest := image.NewRGBA(image.Rect(0, 0, 600, 22))
 
 	draw.Draw(dest, dest.Bounds(), &image.Uniform{color.Black}, image.ZP, draw.Src)
 	// grab font

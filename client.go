@@ -48,7 +48,7 @@ type Response struct {
 }
 
 func (r Response) GetTime() string {
-	return r.Time.UpdatedISO.Format("Mon Jan 2")
+	return r.Time.UpdatedISO.Format("Jan 2 15:04:05")
 
 }
 func gethttpclient() error {
