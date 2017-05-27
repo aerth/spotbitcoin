@@ -2,6 +2,15 @@ Somewhat live bitcoin price index, using CoinDesk API
 
 ![example](https://spotbitcoin.herokuapp.com/current.png)
 
+### Embed Code
+
+```
+
+<img style="max-width: 100%; height: auto;" src="/current.png"><p>Powered by <a href="https://coindesk.com">CoinDesk</a> API | <a href="https://github.com/aerth/spotbitcoin/">source code (MIT)</a> by aerth</p>
+
+
+```
+
 Font Credits:
 
 ```
