@@ -35,12 +35,10 @@ func main() {
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte(`<!DOCTYPE html>
-<html>
-<img style="max-width: 100%; height: auto;" src="/current.png">
-<br>Powered by <a href="https://coindesk.com">CoinDesk<a> API | 
-<a href="https://github.com/aerth/spotbitcoin/">source code (MIT)</a> 
-by aerth
-</html>
-`))
+	var htmlcode = []byte(`<img style="max-width: 100%; height: auto;" src="/current.png"><p>Powered by <a href="https://coindesk.com">CoinDesk</a> API | <a href="https://github.com/aerth/spotbitcoin/">source code (MIT)</a> by aerth</p>`)
+	w.Write([]byte("<!DOCTYPE html>\n<html>"))
+	w.Write(htmlcode)
+	w.Write([]byte("\n<p>embed code:</p><br><textarea>"))
+	w.Write(htmlcode)
+	w.Write([]byte("\n</textarea>\n</html>"))
 }
