@@ -35,5 +35,12 @@ func main() {
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("/current.png"))
+	w.Write([]byte(`<!DOCTYPE html>
+<html>
+<img style="max-width: 100%; height: auto;" src="/current.png">
+<br>Powered by <a href="https://coindesk.com">CoinDesk<a> API | 
+<a href="https://github.com/aerth/spotbitcoin/">source code (MIT)</a> 
+by aerth
+</html>
+`))
 }
