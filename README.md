@@ -1,6 +1,6 @@
 Somewhat live bitcoin price index, using CoinDesk API
 
-You like? Consider a BTC donation: 1ANjiTNvdEM6Me3yc4EBFSkDb4db4XW6pr
+You like? Consider a BTC donation: `1ANjiTNvdEM6Me3yc4EBFSkDb4db4XW6pr`
 
 ![example](https://spotbitcoin.herokuapp.com/current.png)
 
@@ -8,7 +8,7 @@ You like? Consider a BTC donation: 1ANjiTNvdEM6Me3yc4EBFSkDb4db4XW6pr
 
 ```
 
-<img style="max-width: 100%; height: auto;" src="/current.png"><p>Powered by <a href="https://coindesk.com">CoinDesk</a> API | <a href="https://github.com/aerth/spotbitcoin/">source code (MIT)</a> by aerth</p>
+<img style="max-width: 100%; height: auto;" src="https://spotbitcoin.herokuapp.com/current.png"><p>Powered by <a href="https://coindesk.com">CoinDesk</a> API | <a href="https://github.com/aerth/spotbitcoin/">source code (MIT)</a> by aerth</p>
 
 
 ```
