@@ -1,5 +1,7 @@
 Somewhat live bitcoin price index, using CoinDesk API
 
+You like? Consider a BTC donation: 1ANjiTNvdEM6Me3yc4EBFSkDb4db4XW6pr
+
 ![example](https://spotbitcoin.herokuapp.com/current.png)
 
 ### Embed Code
